@@ -59,7 +59,7 @@ export default function App() {
   };
 
   return (
-    <div>
+    <div id='app-container'>
       <h1>Rock | Paper | Scissors</h1>
       <h2>Computer Move: {ComputerMove}</h2>
       <h2>User Move: {UserMove}</h2>
