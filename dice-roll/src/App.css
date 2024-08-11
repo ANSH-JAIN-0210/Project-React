@@ -1,0 +1,41 @@
+/* Styles for the container */
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+}
+
+/* Style for the main heading */
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for the dice result */
+h3 {
+  font-size: 1.8em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Style for the button */
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+button:hover {
+  background-color: #45a049;
+}
