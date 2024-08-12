@@ -1,0 +1,50 @@
+/* src/App.css */
+.App {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  /* background: linear-gradient(135deg, #e2ebf0, #cfd9df); */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.light-mode {
+  background-color: #e2ebf0;
+  color: #333;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%; /* Fully rounded button */
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: #fff;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: linear-gradient(135deg, #ee0979, #ff6a00);
+  transform: scale(1.15); /* Slightly larger scale on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  background: none; /* Ensure no background color is overriding */
+}
