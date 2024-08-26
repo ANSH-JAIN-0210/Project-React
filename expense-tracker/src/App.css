@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.expense-tracker {
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.form input,
+.form select,
+.form button {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form input,
+.form select {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+.form button {
+  grid-column: span 2;
+  background-color: #ff4b2b;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3);
+}
+
+.form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.5);
+}
+
+.totals {
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.totals h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffdd57;
+}
+
+.totals p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.transactions {
+  margin-top: 20px;
+}
+
+.transactions h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.transactions ul {
+  list-style-type: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.transactions li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.transactions li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.transactions li div {
+  flex: 1;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+}
+
+.transactions li div:first-child {
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.transactions li div:last-child {
+  text-align: right;
+}
